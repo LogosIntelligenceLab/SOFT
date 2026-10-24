@@ -40,7 +40,7 @@ The directory structure is the standard layout for the torchvision [`datasets.Im
 ```
 ## Installation
 ```shell script
-git clone https://github.com/fudan-zvg/SOFT.git
+git clone https://github.com/LogosIntelligenceLab/SOFT.git
 python -m pip install -e SOFT
 ```
 

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>SOFT</title><meta name="description" content="SOFT: Softmax-free Transformer with Linear Complexity"><link rel="canonical" href="https://logosintelligencelab.github.io/SOFT/"><meta property="og:title" content="SOFT"><meta property="og:url" content="https://logosintelligencelab.github.io/SOFT/"><link rel="stylesheet" href="./style.css"></head>
+<body id="top-of-page"><main><div class="text-center">
+    <h1>SOFT: Softmax-free Transformer with Linear Complexity </h1>
+    <br>
+    <h6>
+        Jiachen Lu<sup>1</sup> &ensp;
+        Jinghan Yao<sup>1</sup> &ensp;
+		Junge Zhang<sup>1</sup> &ensp;
+        <a href="https://xiatian-zhu.github.io" target="_blank" rel="noopener noreferrer">Xiatian Zhu</a><sup>2</sup> &ensp;
+        Hang Xu<sup>3</sup> &ensp;
+        <br>
+		Weiguo Gao<sup>1</sup> &ensp;
+		Chunjing Xu<sup>3</sup> &ensp;
+        <a href="https://scholar.google.com/citations?user=MeS5d4gAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Tao Xiang</a><sup>2</sup> &ensp;
+        <a href="http://www.robots.ox.ac.uk/~lz/" target="_blank" rel="noopener noreferrer">Li Zhang</a><sup>1 *</sup>
+    </h6>
+    <br>
+    <h6>
+        <sup>1</sup>Fudan University &ensp;&ensp;
+        <sup>2</sup>University of Surrey &ensp;&ensp;
+		<sup>3</sup>Huawei Noah's Ark Lab
+
+    </h6>
+
+    <h3>
+        NeurIPS 2021 (Spotlight)
+    </h3>
+
+    <br>
+    <h2>
+        <a href="https://arxiv.org/abs/2110.11945" target="_blank" rel="noopener noreferrer">Paper</a> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+        <a href="https://github.com/LogosIntelligenceLab/SOFT" target="_blank" rel="noopener noreferrer">Code</a>
+    </h2>
+</div>
+
+<div class="text-center">
+    <h2>Abstract</h2>
+</div>
+<div class="row">
+    <p>
+        Vision transformers (ViTs) have pushed the state-of-the-art for various visual recog-nition tasks by patch-wise image tokenization followed by self-attention. However,the employment of self-attention modules results in a quadratic complexity inboth computation and memory usage. Various attempts on approximating the self-attention computation with linear complexity have been made in Natural Language Processing. However, an in-depth analysis in this work shows that they are either theoretically flawed or empirically ineffective for visual recognition. We further identify that their limitations are rooted in keeping the softmax self-attention during approximations. Specifically, conventional self-attention is computed by normalizing the scaled dot-product between token feature vectors.  Keeping this softmax operation challenges any subsequent linearization efforts. Based on this insight, for the first time, a softmax-free transformer or SOFT is proposed. To remove softmax in self-attention, Gaussian kernel function is used to replace the dot-product similarity without further normalization.  This enables a full self-attention matrix to be approximated via a low-rank matrix decomposition.  The robustnessof the approximation is achieved by calculating its Moore-Penrose inverse usinga Newton-Raphson method.  Extensive experiments on ImageNet show that our SOFT significantly improves the computational efficiency of existing ViT variants. Crucially, with a linear complexity, much longer token sequences are permitted in SOFT, resulting in superior trade-off between accuracy and complexity.
+    </p>
+
+</div>
+
+<div class="row">
+    <br>
+    <img class="img-responsive center-block" alt="pipeline picture" src="./images/images_for_pub/SOFT-1.png" style="width:100%">
+</div>
+
+<div class="row">
+    <br>
+    <img class="img-responsive center-block" alt="pipeline picture" src="./images/images_for_pub/SOFT-2.png" style="width:100%">
+</div></main><footer>Created by Zheyuan Zhou · <a href="#top-of-page">Back to top</a></footer></body></html>

@@ -1,5 +1,7 @@
 # Softmax-free Linear Transformers
 
+[Project page](https://logosintelligencelab.github.io/SOFT/)
+
 ![image](resources/structure.png)
 
 > [**SOFT: Softmax-free Transformer with Linear Complexity**](https://arxiv.org/abs/2110.11945),            
@@ -17,7 +19,7 @@
 
 ## NEWS
 - [2024/02/12] Our journal extension [Softmax-free Linear Transformer](https://arxiv.org/abs/2207.03341) is accepted by IJCV.
-- [2022/07/05] SOFT is now available for downstream tasks! An efficient normalization is applied to SOFT. Please refer to [SOFT-Norm](https://github.com/fudan-zvg/SOFT/tree/normalization)
+- [2022/07/05] SOFT is now available for downstream tasks! An efficient normalization is applied to SOFT. Please refer to [SOFT-Norm](https://github.com/LogosIntelligenceLab/SOFT/tree/normalization)
 
 ## Requirments
 * timm==0.3.2
@@ -49,7 +51,7 @@ The directory structure is the standard layout for the torchvision [`datasets.Im
 ```
 ## Installation
 ```shell script
-git clone https://github.com/fudan-zvg/SOFT.git
+git clone https://github.com/LogosIntelligenceLab/SOFT.git
 python -m pip install -e SOFT
 ```
 
